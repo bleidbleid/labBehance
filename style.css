@@ -111,7 +111,10 @@ body {
     right: 0px;
 }
 
-.foto1, .foto2, .foto3, .foto4 {
+.foto1,
+.foto2,
+.foto3,
+.foto4 {
     width: 300px;
 }
 
