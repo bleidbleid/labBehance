@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 * {
     font-family: 'Silkscreen', cursive;
 }
@@ -12,33 +13,54 @@ body {
 .item1 {
     grid-area: barra;
     background-color: #98FFBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    flex-direction: column;
+
 }
 
 .item2 {
     grid-area: cap;
-    background-color: #7F9FE8;
+    display: flex;
+    position: relative;
+    height: 130px;
 }
 
 .item3 {
     grid-area: buit;
-    background-color: #FF98FF;
 }
 
 .item4 {
     grid-area: foto;
     background-color: #FFFA9E;
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+
 }
+
+.quadricula {
+    display: grid;
+    gap: 10px;
+    /* height: 100vh; */
+    grid-template-areas:
+        'foto1 foto2'
+        'foto3 foto4';
+}
+
 .grid-container {
     color: black;
     display: grid;
     gap: 10px;
     height: 100vh;
-    grid-template-areas: 
-    'barra cap buit'
-    'barra foto foto'
-    'barra foto foto'
-    'barra foto foto'
-    'barra foto foto';
+    grid-template-areas:
+        'barra cap buit'
+        'barra foto foto'
+        'barra foto foto'
+        'barra foto foto'
+        'barra foto foto';
 }
 
 .logo {
@@ -58,6 +80,8 @@ body {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 50px;
+    align-items: center;
+    height: 128px;
 }
 
 .search {
@@ -69,5 +93,29 @@ body {
 .clic {
     background-color: red;
     width: 120px;
-    height: 32px; 
+    height: 32px;
+}
+
+.profilePic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.moodboard {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    justify-content: space-between;
+    left: 0px;
+    right: 0px;
+}
+
+.foto1, .foto2, .foto3, .foto4 {
+    width: 300px;
+}
+
+
+.clac:hover {
+    background-color: yellow;
 }
