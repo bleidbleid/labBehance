@@ -12,10 +12,10 @@ body {
 
 .item1 {
     grid-area: barra;
-    background-color: #98FFBF;
+    background-color: #C4E1F2;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     padding: 32px;
     flex-direction: column;
 
@@ -35,19 +35,37 @@ body {
 .item4 {
     grid-area: foto;
     background-color: #FFFA9E;
+    align-content: center;
     justify-content: center;
     display: flex;
-    padding-top: 100px;
+    padding: 70px;
 
+
+}
+
+.item1>article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .quadricula {
     display: grid;
     gap: 10px;
+    /* width: 100%; */
     /* height: 100vh; */
     grid-template-areas:
         'foto1 foto2'
         'foto3 foto4';
+}
+
+.quadricula>article {
+    height: 250px;
+    width: 350px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
 }
 
 .grid-container {
@@ -72,6 +90,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-shadow: 2px 2px #000000;
+}
+
+.nom {
+    font-size: ;
+}
+
+.discover > p:hover {
+    color: #000000;
+    text-shadow: 2px 2px #ffffff;
 }
 
 .top {
@@ -82,6 +110,7 @@ body {
     padding-right: 50px;
     align-items: center;
     height: 128px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F09%2F13%2F01%2F48%2Fgiraffe-937622_960_720.jpg&f=1&nofb=1);
 }
 
 .search {
@@ -116,9 +145,33 @@ body {
 .foto3,
 .foto4 {
     width: 300px;
+    background-size: cover;
+
 }
 
 
 .clac:hover {
     background-color: yellow;
+}
+
+.clac {
+    width: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.foto1 {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fundark.org%2Fwp-content%2Fuploads%2F2016%2F09%2Fsavana.jpg&f=1&nofb=1https://undark.org/wp-content/uploads/2016/09/savana.jpg);
+}
+
+.foto2 {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.ev.mu%2Fimages%2Fattractions%2F155%2F960x640%2F11037.jpg&f=1&nofb=1);
+}
+
+.foto3 {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.fineartamerica.com%2Fimages-medium-large-5%2Fafrican-lion-on-savanna-masai-mara-kenya-hiroya-minakuchi.jpg&f=1&nofb=1);
+}
+
+.foto4 {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh5.googleusercontent.com%2Fproxy%2FBQqhtaJOsp6WGa1yAB4LRYBVJTDdl4LI3ynJGsu_xqraT3DPzjF5X0dHCiim0I7rK3saFVTtK75CL1t0TdU7utJ83xScdXz5iVsLIvVn2kzuXBy8LbwmHEKGjOKs-o8WtDngWcgtwfMp2NAEc6_OdvfjlpHoWI7xAvE7_S2dkiOVqJjuhA%3Dw1200-h630-p-k-no-nu&f=1&nofb=1);
 }
