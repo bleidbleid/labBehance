@@ -97,7 +97,7 @@ body {
 
 .discover > p:hover {
     color: #000000;
-    text-shadow: 2px 2px #ffffff;
+    text-shadow: 1px 1px #ffffff;
 }
 
 .top {
@@ -121,6 +121,9 @@ body {
     background-color: red;
     width: 120px;
     height: 32px;
+}
+.clic:hover {
+    background-color: rgb(255, 149, 149);
 }
 
 .profilePic {
